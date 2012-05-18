@@ -7,7 +7,7 @@ class TasksController < ApplicationController
 #variables de instancia comienzan con @
   def create
 		@task=Task.new(params[:task])
-		if @task.save
+		if task.save
 			redirect_to @task # nos reedirije a la lista de modelos. /task/1
 		end
   end
