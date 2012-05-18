@@ -1,10 +1,12 @@
 
 
 class TasksController < ApplicationController
-  
+
+#variables de instancia comienzan con @  
 	def index
+		@tasks=Task.all
   end
-#variables de instancia comienzan con @
+
   def create
 		@task=Task.new(params[:task])
 		if @task.save
@@ -27,6 +29,8 @@ class TasksController < ApplicationController
   end
 
   def destroy
+		Task.find(params[:id]).try(:delete)
+		redirect_to tasks_path
   end
 
 end

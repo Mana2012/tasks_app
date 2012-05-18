@@ -6,7 +6,7 @@
 		<li> 
 				<%=task.description%>
 				<%= link_to "Mostrar", task%>
-				<%= link_to "Borrar", task, :method=> :delete, :confirm=> "Estas Seguro??"%>
+				<%= link_to "Borrar", task, method=> :delete, :confirm=> "Estas Seguro??"%>
 		</li>
 	<%end%>
 </ol>
