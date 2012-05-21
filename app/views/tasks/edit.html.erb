@@ -1,2 +1,17 @@
-<h1>Tasks#edit</h1>
-<p>Find me in app/views/tasks/edit.html.erb</p>
+
+
+<h1> Edit a Task </h1>
+<%=form_for @task do |f|%> 
+	<p>
+		<!--f = formulario de Taks, % se usa para evaluar codigo de ruby en la plantilla-->
+		<%=f.label :description%>
+		<%=f.text_area :description, @task.description%>
+	</p>
+	<p>
+		<%=f.label :priority%>
+		<%=f.number_field :priority, @task.priority%>
+	</p>
+	<p>
+		<%=f.submit %>
+	</p>
+<%end%>
