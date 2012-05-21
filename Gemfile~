@@ -38,6 +38,5 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'therubyracer', group: :development
 gem 'rb-readline'
-gem 'sqlite3'
 gem 'sqlite3', :group => :development
 gem 'pg', :group => :production
