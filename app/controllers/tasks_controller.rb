@@ -12,7 +12,7 @@ class TasksController < ApplicationController
 		if @task.save
 			redirect_to @task # nos reedirije a la lista de modelos. /task/1
 		else
-			render :new		
+			render :new	
 		end
   end
 
@@ -21,12 +21,12 @@ class TasksController < ApplicationController
   end
 
   def update
-  	@task=Task.new(params[:id])		
-		if @task.update_attributes(params(:task))
-			redirect_to @task
-		else
-			render :edit
-		end
+  	@task=Task.new(params[:task])		
+	if @task.update_attributes(params[:task])
+		redirect_to @task
+	else
+		render :edit
+	end
   end
 
   def edit
