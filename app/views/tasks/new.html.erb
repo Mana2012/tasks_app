@@ -2,19 +2,4 @@
 
 <h1> Create a Task </h1>
 
-<%=form_for @task do |f|%> 
-	<p>
-		<!--f = formulario de Taks, % se usa para evaluar codigo de ruby en la plantilla-->
-		<%=f.label :description%>
-		<%=f.text_area :description%>
-	</p>
-
-	<p>
-		<%=f.label :priority%>
-		<%=f.number_field :priority%>
-	</p>
-
-	<p>
-		<%=f.submit %>
-	</p>
-<%end%>
+<%= render 'form'%> 
