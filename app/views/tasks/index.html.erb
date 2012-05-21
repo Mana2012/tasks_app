@@ -7,7 +7,7 @@
 				<%=task.description%>
 				<%= link_to "Mostrar", task%>
 				<%= link_to "Borrar", task, :method=> :delete, :confirm=> "Estas Seguro??"%>
-				<%= link_to "Editar", task%>
+				<%= link_to "Editar", edit_task_path(task.id)%>
 		</li>
 	<%end%>
 </ol>
