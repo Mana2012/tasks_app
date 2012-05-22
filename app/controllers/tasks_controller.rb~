@@ -21,7 +21,7 @@ class TasksController < ApplicationController
   end
 
   def update
-  	@task=Task.new(params[:id])		
+  	@task=Task.new(params[:task])		
 	if @task.update_attributes(params[:task])
 		redirect_to @task
 	else
