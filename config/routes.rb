@@ -4,9 +4,11 @@ Tasks::Application.routes.draw do
 
   get "sessions/new"
 
-  resources :users
+	root to: "tasks#index" #nos envia a la ruta raiz de tasks
 
 	resources :tasks
+	resources :users
+	resources :sessions
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

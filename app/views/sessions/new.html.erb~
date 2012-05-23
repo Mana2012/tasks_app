@@ -1,7 +1,7 @@
 
 
 
-<!--session nos da la ruta despues de la pleca-->
+<!--lo ultimo nos da la ruta despues de la pleca-->
 <%= form_tag sessions_path do%>
 
 	<div class = "field" >
